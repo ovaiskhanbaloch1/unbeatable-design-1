@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unbeatable Cleaning Services LLC</title>
+    <!-- Single Page Apps for GitHub Pages (spa-github-pages):
+         redirects a deep clean-path URL (e.g. /unbeatable-design-1/services)
+         to the app root with the path encoded as a query string (?/services);
+         the restore script in index.html converts it back to the clean path. -->
+    <script type="text/javascript">
+      // This project is served from a repo subpath (/unbeatable-design-1),
+      // so keep 1 path segment (the repo name) in the redirect target.
+      var pathSegmentsToKeep = 1;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
